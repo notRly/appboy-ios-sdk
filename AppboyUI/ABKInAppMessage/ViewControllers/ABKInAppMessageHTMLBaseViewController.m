@@ -81,7 +81,7 @@ static NSString *const ABKHTMLInAppJavaScriptExtension = @"js";
   if (@available(iOS 10.0, *)) {
     webViewConfiguration.mediaTypesRequiringUserActionForPlayback = WKAudiovisualMediaTypeNone;
   } else {
-    webViewConfiguration.requiresUserActionForMediaPlayback = No;
+    webViewConfiguration.requiresUserActionForMediaPlayback = NO;
   }
   
   ABKInAppMessageWindowController *parentViewController =
