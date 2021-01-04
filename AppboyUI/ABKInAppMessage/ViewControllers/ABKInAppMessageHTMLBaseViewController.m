@@ -73,9 +73,9 @@ static NSString *const ABKHTMLInAppJavaScriptExtension = @"js";
   webViewConfiguration.allowsInlineMediaPlayback = YES;
   webViewConfiguration.suppressesIncrementalRendering = YES;
   if (@available(iOS 10.0, *)) {
-    webViewConfiguration.mediaTypesRequiringUserActionForPlayback = WKAudiovisualMediaTypeAll;
+    webViewConfiguration.mediaTypesRequiringUserActionForPlayback = WKAudiovisualMediaTypeNone;
   } else {
-    webViewConfiguration.requiresUserActionForMediaPlayback = YES;
+    webViewConfiguration.requiresUserActionForMediaPlayback = None;
   }
   
   ABKInAppMessageWindowController *parentViewController =
