@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "http://www.braze.com"
   s.license      = { :type => 'Commercial', :text => 'Please refer to https://github.com/Appboy/appboy-ios-sdk/blob/master/LICENSE'}
   s.author       = { "Appboy" => "http://www.braze.com" }
-  s.source       = { :http => "https://github.com/Appboy/appboy-ios-sdk/releases/download/#{s.version.to_s}/Appboy_iOS_SDK.zip" }
+  s.source       = { :http => "https://github.com/notrly/appboy-ios-sdk.git", :tag => '3.29.0-step' }
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.requires_arc = true
